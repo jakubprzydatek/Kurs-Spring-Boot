@@ -2,6 +2,7 @@
 package pl.course.restapi.service;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
@@ -19,6 +20,7 @@ import java.util.stream.Collectors;
 public class PostService {
 
 
+    @Autowired
     private final PostRepository postRepository;
     private final CommentRepository commentRepository;
 
